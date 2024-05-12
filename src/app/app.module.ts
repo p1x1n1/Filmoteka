@@ -3,14 +3,42 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FilmFormComponent } from './film-form/film-form.component';
+import { FilmListComponent } from './film-list/film-list.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FilmComponent } from './film/film.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+
+const appRoutes: Routes =[
+  {path: '', component: FilmComponent },
+  {path: 'form', component: FilmFormComponent},
+  {path: 'filmList', component: FilmListComponent},
+ 
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilmFormComponent,
+    FilmListComponent,
+    FilmComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

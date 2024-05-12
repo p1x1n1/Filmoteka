@@ -1,0 +1,58 @@
+<form [formGroup]="filmForm" (ngSubmit)="OnSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label"> Название (обязательное поле)</label>
+      <input required type="name" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label for="year" class="form-label">Год выхода (обязательное поле)</label>
+        <input required type="year" class="form-control" id="year" formControlName="year">
+    </div>
+    <div class="mb-3">
+        <label for="sumSbor" class="form-label"> Сумма сбора в млн (обязательное поле)</label>
+        <input required type="number" class="form-control" id="sumSbor" formControlName="sumSbor">
+    </div>
+    <div class="mb-3">
+      <label for="genre" class="form-label">Жанр</label>
+      <select class="form-select" id="genre" formControlName="genre" >
+        <option *ngFor="let p of genre | keyvalue" [value]="p.key"><!--keyvallue-pipe-->
+          {{p.value}}
+        </option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="country" class="form-label">Страна</label>
+        <input type="text" class="form-control" id="country" formControlName="country">
+    </div>
+    <div class="mb-3">
+      <label for="time" class="form-label">Продолжительность</label>
+      <input required="" type="text" class="form-control" id="time" formControlName="time">
+    </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Описание</label>
+        <textarea class="form-control" id="description" formControlName="description" ></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="director" class="form-label">Режиссер (обязательное поле)</label>
+        <!-- <input required type="text" class="form-control" id="producer" formControlName="producer" > -->
+        <select required class="form-select" id="director" formControlName="director" >
+            <option *ngFor="let p of director | keyvalue" [value]="p.key"><!--keyvallue-pipe-->
+              {{p.value}}
+            </option>
+          </select>  
+        </div>
+      <div class="mb-3" *ngFor="let actor of actors; let i = index">
+          <label for="actor-{{i}}" class="form-label">Актёр {{i+1}}</label>
+          <input formControlName="actor[{{i}}]" type="text" class="form-control" id="actor-{{i}}" [(ngModel)]="actors[i]" (change)="onActorChange($event, i)">
+      </div>
+      <button type="button" class="btn btn-warning dark" (click)="addActor()">Добавить актера</button>
+      <div class="mb-3">
+        <label for="poster" class="form-label">Постер</label>
+        <input type="text" class="form-control" id="poster" formControlName="poster">
+    </div>
+      <div *ngIf="filmForm.invalid">
+        <p>Не все обязательные поля заполнены!</p>
+      </div>
+      <button class="btn btn-danger" [disabled]="filmForm.invalid" type="submit" >Сохранить</button>
+    </form>
+  

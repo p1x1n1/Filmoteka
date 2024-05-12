@@ -1,0 +1,89 @@
+.body{
+    background-color: black;
+}
+.content{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cardimg{
+    position: relative;
+    top: 20px;
+    width: 90%;
+    height: 100%;
+    left: 10%;
+  
+}
+.cardheader{
+position: absolute;
+left: 20%;
+top: 35%;
+}
+.cardheader h3{
+font-family: 'Inter';
+font-style: bold;
+font-weight: 400;
+font-size: 42px;
+line-height: 29px;
+
+color: #FFFFFF;
+
+}
+.cardheader h4{
+font-family: 'Inter';
+font-style: bold;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+    
+color: #FFFFFF;
+    
+}
+.cardbody{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 60%;
+    padding: 2%;
+}
+
+.cardbody p{
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgb(255, 255, 255);
+}
+    
+.cardbody h3{
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    
+    color: #FFFFFF;
+    
+}
+.cardbody h4{
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+        
+    color: #FFFFFF;
+        
+}
+
+.cardbutton{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    width: 80%;
+    padding: 2%;
+}

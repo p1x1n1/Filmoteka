@@ -1,0 +1,27 @@
+{
+    "film": [
+      {"name":"1+1",
+      "year":"2011",
+      "sumSbor":426,
+      "genre":"Комедии",
+      "country":"Франция",
+      "time":"112 минут",
+      "description":"Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы, – молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.",
+      "director":"Оливье Накаш",
+      "actors":["Франсуа Клюзе","Омар Си","Анн Ле Ни"],
+      "poster":"https://images-s.kinorium.com/movie/poster/537521/h280_50292658.jpg"
+    },
+    {"name":"Гарри Поттер и узник Азкабана",
+    "year":"2004",
+    "sumSbor":807,
+    "genre":"Фантастика",
+    "country":" Великобритания, США",
+    "time":"142 минуты",
+    "description":"Гарри, Рон и Гермиона возвращаются на третий курс школы чародейства и волшебства Хогвартс. На этот раз они должны раскрыть тайну узника, сбежавшего из тюрьмы Азкабан, чье пребывание на воле создает для Гарри смертельную опасность.",
+    "director":"Альфонсо Куарон",
+    "actors":["Дэниэл Рэдклифф","Руперт Гринт","Эмма Уотсон"],
+    "poster":"https://kinopoisk-ru.clstorage.net/fL1Z55171/408d37M42/rzWmnolhrB0hAchuQ8N4Tx5PV9aO7xz6ZSS8HuQQSHz4ufgTQhiCyz1E1AkipjvPd0ROilTBcHmQQ7aA65yWa549q4vEHekgcQiwD2KaCQJrZn67yrN52zw0yFORfTTAOBkwtoqAfmu99VEEM7pOuhI5T4Z84TRQpW6HSA6VG7qzVUpy6WHZqXEBsXbvd-xDHmqrsjLmZHrtEQQuaKwUuHS5oCbuEKZXuc3lXPtDptImmXfKSNlAxX0Gm2QrSZein8ViRjEdQU29jdnSD1PYR44GJ04uWoQO2WGUkuisWOB8iewm_vj6bzkB2RCPQ3IyaslvVtAlfPlZbjcsk7k_3h91jl7BfSHxkSmp4oebTD-q8jfSVuZgNuGRuILE5OiolCEUnp4snt9xbaFgjwdSqtKpN5JUZWgt-a5jMCfRk56D3SrqwfEtBdlVNY6DXwiTAqqLKjI2jErhabSS4KzYKIxZYKo-bIITsX2BjCvPbgLqUWveeK2ssUX2_zDnta9SN1UKLglhMcFF0VlGe8Ogjypuc-LOugA-NdHA6nQgxLAMJeAeatS-04X1SRQzP-4Kei3b1hD1QK3BYrPUN0HjIkNR-prJkaG1tVVlBr9fcOvatr_ewnIschUhqKbchKQIWN3kXqYEalP9YVUAI6eWmo4J20pg1cylxaLfZH8hL8rnya6qHZVlOdUtkWaf3xRXLmILNt5ihAatnRzWjKDEIAhRKGJGoHqf4RkhYPfvLn4GhVPWVIVgMYGCG1w3HWc6h80-dgH9vaFJzRXSH5_Ix5q2MzqyNpxyqTG0LnAANODo2SBiEhSiKyX1STivz_IOJmn_IvwVULmRAvNs9y1bWqOtylqV-UENuXVRWjuLdEtK5mP20g4Q9jn5hKLsMORwEHWcjib8YutpdVU8M78mWjpR72KU_fDlRU7D7MPJuzajKcpuHaXxQQEp7ZYDT5Q7js6jWhJiRFIlLSiObJCgmIgBjHq2kHKvSf3tBKtXos5WxWMCgJWcHQlG_1QzsbPWT8F6ru0l9XH9SZmSr1tol8qee6ZWDojyyVWsHvxwXAQUSVASopwapy2ZRRyvyxK69hkz7oAh5OGRvkswzzlrbsNZdp4docUdyTm9ZhsfyMuS6quiht6Q2lnhuL5I4MxkFH38Zl5UPlfBfdW844OSJlK9M14IeWTZMfrvaHu9rwJL4T4mJaFZiQHRpXqTE1RPRkZ3fvL2SKaVzZAK7DBYqJj11B7utIqr8cm5YF93qg4ulWN2yPlAyQH6YzAT_ddqP-mqShGhOWmh2bl6u1tkwz6K_zbyjpjylWkkDlgAMChoTYQiepiqUxmVYeRPt7IKionHnuSdmLG54hvsk70_Tm8Jnv6B-b1FtYnlzi9joB9uglvCHnpE3nU5VOZUDFAoAMngcnJwGn85FVG4V8t-MgLB606kQbjdNZLnAK9dv5KLSfLuVYFxsXFRXZrDm1yflmrfNr7qBHqZwUQ2bDR8HPwxUAKeAF5jtQH9dENfHp6qGSfq_OkQmfWONyQTpbMCa32mgi1JWS2pFYF66y-QV9I-x8aKKjD-VeU8FgCI-LAAkVxyquTmq501bUynT-JGFum3btCNkEEhzvP8K4nX4r_1pgbJSakdcXGh8ov_FFcyvt_iCgKEuhHNBI7gSCAkALH85lagZps1RYFAt_vqOvrJV56ILVAVQWY7cBcJ6zrnpSaSyQXZ7cE9zRorY4SL4kqnOvJ-gA7BUegqHHCwuFTRBLK2kHIPiXXJZCdvelqiqTveIHVo1RmqNyiroesuzzku1jlJ0bWNIcECM1f8uy4ayyKWing6dekEmgQUtDQQofiWrtzq7xXBrdD3U6pS8omT_uBBpM29CoeYa_XLoqOtwtbt8XmR3dVFapvvkFeuCieK-h7sbn3dSHpcnDA0oA1Usk4EFheNQc1ou9PGRvotRwqMkajNpXpPPEdB76oPeTpeRQXp8UEVRX4L3-RzNoLHMrbuZDYppZAGqJhEKEAVoIYe8IZ7mR1lnGvLuvLyNWsiJPVs6UH2n3yvDc-2hw3q_rXBwZ1xTWVa9yMkg8I6u0Iiiog-raHQ8hAA2LD0EWQuehxmV3Fpffz_N2ay8i1HipBh0LUxwhsst5EvyuvJYpopwbV1zY3Bvht7mPNC7oeqsvaM4hVBaFqA_Hjs_JncphZUGvdJfdW4M7c-Pq41w-bs2XTB0eLn8JexX95ndRYmQQntwfGBSQKv6wDL6npTapIyJNJF8cCuYCxMDNhVPKba4O5rmUGJAAdzKpIaxWv26FE0sS3md-SrhW_ag60CClVhdfm52aHaB2cg5xqSNz6O7pi-KZU8ohj4MDAUmVQeqjRe16UZSdCjV_6acjGryhRNvPXVtheA_0E_aps9Rqrd6dHtrdkB6hd_EGeq8ndSjoLwYhXhDLaM-Ex0gMFs3vI4PvuF6SHgq69KpioV64582cwtIW7fsM9JS2J76f7aEXl5bUElpRbv79D3Lrqz-nI6COL5HUyKKHS0_IQpdKLCuALjZVn9nGPf4pJuvcsCXMmgPVEKY5Q72SfO62kC7hmhBTlJAbnaPwPYHwbic9byFmiikRU06gyM6HCAlXAKprSKlyUd1ezz_95GqimnWhD11NExHpsIOz1bahNpgmYJtX05tQ0d4mfTzAcGsiNazp6w_v3Z7Bag_NTsZNXoFiLshpM9ASlchwdKiv65f4YMrTwxqf7LdNtJN5pvDfoSsUHphYW5LZJvD9h7nk7n1rausLapbQxqDOjcJFilgBpWVGJf6cU5MHNfYtoS4cfedOVAYQGC_4hT0b-2B41GXkm1WfFx3d2WB_f4HzYmI9Ku_uA2FdFEVuS4fDSAhWymFiwi7xFp0WT7wzJevskz8mz99KX1Nleoa_UvlruhPhJJIdENEcHhnjfPKEveng9O1jYsppnJhPKELBDsLDVs-nqEPtPB7Tlcq0sy1tYNE854reC9sS6c"
+  }
+    ]
+  }
+  
