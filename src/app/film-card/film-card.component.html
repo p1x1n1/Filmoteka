@@ -1,0 +1,38 @@
+ 
+<div class="content">
+    <iframe  class="cardvideo" [src]="videoUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+    <div class="cardcontent">
+        <div class="cardimg">
+            <img [src]="film.poster" alt="">
+        </div>
+        <div class="cardheader">
+            <h3>{{film.name}} ({{film.year}})</h3>
+            <div>
+                <button  class="btn btn-outline-danger" style="margin-right: 20px"> {{film.genre}}</button>
+                <button  class="btn btn-outline-warning"> {{film.country}}</button>
+            </div>
+        </div>
+        <div class="cardbody">
+            <div class="text">
+                <h5>Режисссёр: {{film.director}}</h5>
+                <h5>Подолжительность: {{film.time}}</h5>
+                <h5>Сумма сборов в мире в млн.: {{film.sumSbor}}</h5>
+            </div>
+            <div class="actors">
+                <h3 >Актёры</h3>
+                <ul>
+                    <li *ngFor="let actor of film.actors">{{actor}}
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+    <div class="cardfooter">
+        <div class="line"></div>
+        <p>{{film.description}}</p>
+    </div>
+
+
+</div>

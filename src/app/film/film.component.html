@@ -1,0 +1,18 @@
+<div class="body" *ngFor="let film of films; let i = index">
+    <div class="content" >
+      <!-- <img [src]="film.poster" class="cardimg" /> -->
+      <div class="cardimg" style="background-image: url({{film.poster}}); background-attachment: fixed; background-size: cover;"></div>
+      <div class="cardheader">
+        <h3>{{film.name}} ({{film.year}})</h3>
+        <h4>Страна: {{film.country}}</h4>
+      </div>
+      <div class="cardbody">
+        <p>{{film.description}}</p>
+      </div>
+    <div class="cardbutton">
+      <button class="btn btn-danger" type="button" routerLink="/film/{{i}}"> Подробнее</button>
+      <button class="btn btn-primary" type="button"> <a [href]="film.trailer" style="color: white;">Трейлер</a></button>
+    </div>
+</div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;      background-color: black;
+    font-family: 'Citrica' , "Helvetica Neue", sans-serif;}
+
+ @font-face {
+        font-family: "Citrica"; 
+        src: url("./app/citricacyrillic.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+ }
