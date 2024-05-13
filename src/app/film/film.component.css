@@ -1,10 +1,8 @@
-.body{
-    background-color: black;
-}
+
 .content{
     position: relative;
-    width: 1200px;
-    height: 500px;
+    width: 90%;
+    height: 600px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -20,6 +18,7 @@
 position: absolute;
 left: 20%;
 top: 35%;
+font-family: 'Citrica';
 }
 .cardheader h3{
 font-family: 'Inter';
@@ -37,7 +36,7 @@ font-style: bold;
 font-weight: 400;
 font-size: 24px;
 line-height: 29px;
-    
+
 color: #FFFFFF;
     
 }
@@ -47,6 +46,8 @@ color: #FFFFFF;
     top: 50%;
     width: 60%;
     padding: 2%;
+    background-blend-mode: exclusion;
+    background-color: #ffffff6e;
 }
 
 .cardbody p{
@@ -55,6 +56,7 @@ color: #FFFFFF;
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
+    mix-blend-mode: color-dodge;
     color: rgb(255, 255, 255);
 }
     
@@ -82,7 +84,7 @@ color: #FFFFFF;
 .cardbutton{
     display: flex;
     position: absolute;
-    left: 20%;
+    left: 80%;
     top: 80%;
     width: 80%;
     padding: 2%;

@@ -1,0 +1,69 @@
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cardvideo{
+    position: relative;
+    top:2%;
+    width: 100%;
+    height: 300px;
+}
+.cardimg img{
+    position: absolute;
+    width: 30%;
+    height: 300px;
+    left: 10%;
+}
+.cardheader{
+position: absolute;
+left: 50%;
+top:  50px;
+font-family: 'Citrica';
+}
+.cardheader h3{
+font-family: 'Inter';
+font-style: bold;
+font-weight: 400;
+font-size: 42px;
+line-height: 29px;
+
+color: #FFFFFF;
+
+}
+
+.cardcontent{
+    position: relative;
+    height: 50%;
+}
+
+.cardbody{
+    position: relative;
+    left: 45%;
+    top:  150px;
+    color: #FFFFFF;
+    font-family: 'Citrica';
+}
+.text{
+    position: absolute;
+    left: 0%;
+}
+.actors {
+    position: absolute;
+    left: 25%;
+}
+
+
+.line{
+    height: 2px;
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+}
+
+.cardfooter{
+    margin: 10px;
+    position: relative;
+    color: #FFFFFF;
+}

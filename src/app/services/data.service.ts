@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable, catchError, of } from 'rxjs';
+import { SafeResourceUrl } from '@angular/platform-browser';
 
 
 export interface Film {
@@ -10,10 +11,12 @@ export interface Film {
   genre: string,
   country: string,
   time: string,
-  producer: string,
+  director: string,
   description: string,
   actors:  Array<string>,
-  poster: string
+  poster: string,
+  trailer: string,
+  videoUrl: SafeResourceUrl
 }
 
 
@@ -37,17 +40,17 @@ export class DataService {
       }
 
       addFilm(data: any): void {
-        // const data1 = {
-        //   film: data
-        // };
-       
-        console.log(data,JSON.stringify(data))
-        const newData = JSON.stringify(data); // Преобразуем массив в строку JSON
-        this.http.put<Array<Film>>('http://localhost:4200/assets/data1.json', newData).subscribe((response) => {
-          console.log('Данные успешно записаны в data1.json');
-        }, (error) => {
-          console.error('Ошибка при записи данных в data1.json', error);
-        });
+        const data1 = {
+          film: data
+        };
+        console.log(data1,JSON.stringify(data1));
+        this.http.put('http://localhost:4200/assets/data1.json', data1)
+
+        // .subscribe(() => {
+        //   console.log('Данные успешно записаны в data1.json');
+        // }, (error) => {
+        //   console.error('Ошибка при записи данных в data1.json', error);
+        // });
        // Перезаписываем файл с обновленными данными
         
       }

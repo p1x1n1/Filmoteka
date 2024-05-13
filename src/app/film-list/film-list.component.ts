@@ -12,12 +12,8 @@ export class FilmListComponent {
   showForm = signal<boolean>(false);
   films: any[] = [];
   receiveTaskData(film: any): void {
-    console.log('вызван в родителе')
-    //console.log(task);
     this.films.push(film);
-    this.dataService.addFilm(this.films);
-    //console.log(this.tasks);
-    //console.log(this.showForm);  
+    this.dataService.addFilm(this.films); 
     this.showForm.set(false);
     console.log(this.showForm);
   }
@@ -38,10 +34,10 @@ export class FilmListComponent {
         return films;
       }
       ),
-
     )
     .subscribe((data: any) => {
       this.films = data;
-      console.log(data)});
+      console.log(data,this.films);
+    });
   }
 }

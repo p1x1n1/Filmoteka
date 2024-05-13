@@ -1,6 +1,7 @@
-<div class="body" *ngFor="let film of films">
-    <div class="content">
-      <img [src]="film.poster" class="cardimg"/>
+<div class="body" *ngFor="let film of films; let i = index">
+    <div class="content" >
+      <!-- <img [src]="film.poster" class="cardimg" /> -->
+      <div class="cardimg" style="background-image: url({{film.poster}}); background-attachment: fixed; background-size: cover;"></div>
       <div class="cardheader">
         <h3>{{film.name}} ({{film.year}})</h3>
         <h4>Страна: {{film.country}}</h4>
@@ -9,22 +10,9 @@
         <p>{{film.description}}</p>
       </div>
     <div class="cardbutton">
-      <button class="btn btn-danger" type="button"> Подробнее</button>
-      <button class="btn btn-primary" type="button" > Трейлер</button>
+      <button class="btn btn-danger" type="button" routerLink="/film/{{i}}"> Подробнее</button>
+      <button class="btn btn-primary" type="button"> <a [href]="film.trailer" style="color: white;">Трейлер</a></button>
     </div>
-   
 </div>
-    <!-- <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>{{film.name}} ({{film.year}})</mat-card-title>
-        <mat-card-subtitle>{{film.country}}</mat-card-subtitle>
-      </mat-card-header>
-      <img [src]="film.poster" mat-card-image class="card.img"/>
-      <mat-card-content>
-        <p class="card-text">{{film.description}}</p>
-        <h4>Страна: {{film.country}}</h4>
-        <h4>Сборы: {{film.sumSbor}}</h4>
-        <h3>Актёры: {{film.actors}}</h3>
-      </mat-card-content>
-    </mat-card> -->
 </div>
+<router-outlet></router-outlet>

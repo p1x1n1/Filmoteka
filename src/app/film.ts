@@ -1,4 +1,5 @@
 import { FormControl } from "@angular/forms";
+import { SafeResourceUrl } from "@angular/platform-browser";
 import { Data } from "@angular/router";
 
 
@@ -13,4 +14,6 @@ import { Data } from "@angular/router";
         description: FormControl<string|null>,
         actors: FormControl<string[]>,
         poster: FormControl<string|null>,
+        trailer: FormControl<string>,
+        videoUrl: FormControl<SafeResourceUrl|null>,
   }

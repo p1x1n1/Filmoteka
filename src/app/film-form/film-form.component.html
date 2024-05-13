@@ -25,7 +25,7 @@
         <input type="text" class="form-control" id="country" formControlName="country">
     </div>
     <div class="mb-3">
-      <label for="time" class="form-label">Продолжительность</label>
+      <label for="time" class="form-label">Продолжительность (обязательное поле)</label>
       <input required="" type="text" class="form-control" id="time" formControlName="time">
     </div>
       <div class="mb-3">
@@ -41,14 +41,18 @@
             </option>
           </select>  
         </div>
+      <label for="actor" class="form-label">Актёры</label>
       <div class="mb-3" *ngFor="let actor of actors; let i = index">
-          <label for="actor-{{i}}" class="form-label">Актёр {{i+1}}</label>
-          <input formControlName="actor[{{i}}]" type="text" class="form-control" id="actor-{{i}}" [(ngModel)]="actors[i]" (change)="onActorChange($event, i)">
+          <input  required type="text" class="form-control" id="actor-{{i}}" (change)="onActorChange($event, i)">
       </div>
       <button type="button" class="btn btn-warning dark" (click)="addActor()">Добавить актера</button>
       <div class="mb-3">
         <label for="poster" class="form-label">Постер</label>
         <input type="text" class="form-control" id="poster" formControlName="poster">
+    </div>
+    <div class="mb-3">
+      <label for="trailer" class="form-label">Трейлер</label>
+      <input type="text" class="form-control" id="trailer" formControlName="trailer">
     </div>
       <div *ngIf="filmForm.invalid">
         <p>Не все обязательные поля заполнены!</p>

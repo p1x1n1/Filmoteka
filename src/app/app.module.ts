@@ -13,10 +13,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FilmComponent } from './film/film.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { FilmCardComponent } from './film-card/film-card.component';
 
 const appRoutes: Routes =[
   {path: '', component: FilmComponent },
   {path: 'form', component: FilmFormComponent},
+  { path: "film/:id", component: FilmCardComponent},
   {path: 'filmList', component: FilmListComponent},
  
 ];
@@ -26,7 +28,8 @@ const appRoutes: Routes =[
     AppComponent,
     FilmFormComponent,
     FilmListComponent,
-    FilmComponent
+    FilmComponent,
+    FilmCardComponent
   ],
   imports: [
     BrowserModule,

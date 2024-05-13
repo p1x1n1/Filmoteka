@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Film } from '../film';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-film-form',
@@ -10,8 +11,9 @@ import { Film } from '../film';
 export class FilmFormComponent {
   @Output() SubmitTask = new EventEmitter<any>();
   // @Input() numberTask: number = 1;
+  
 
-  actors : string[] = [];
+  actors : string[] = [''];
   filmForm = new FormGroup<Film>({
       name: new FormControl('',{nonNullable: true}),
       year: new FormControl(0 ,{nonNullable: true}),
@@ -21,15 +23,17 @@ export class FilmFormComponent {
       time: new FormControl('' ,{nonNullable: true}),
       description: new FormControl(''),
       director: new FormControl('', {nonNullable: true}),
-      actors: new FormControl([], {nonNullable: true}),
+      actors: new FormControl([''], {nonNullable: true}),
       poster: new FormControl('', {nonNullable: true}),
+      trailer: new FormControl('', {nonNullable: true}),
+      videoUrl: new FormControl('', ),
   });
-  constructor() { 
+  constructor(private sanitizer: DomSanitizer) { 
 
   }
   genre = {
-    "драма":"драма",
-    "ужасы":"ужасы",
+    "Драма":"Драма",
+    "Ужасы":"Ужасы",
     "Комедии": "Комедии",
     "Мультфильмы" : "Мультфильмы",
     "Фантастика" : "Фантастика" ,
@@ -52,15 +56,10 @@ export class FilmFormComponent {
     "Мартин Скорсезе" : "Мартин Скорсезе",
     "Стэнли Кубрик" : "Стэнли Кубрик",
     "Оливье Накаш" : "Оливье Накаш",
+    "Андрес Мускетти":"Андрес Мускетти",
 
   };
-  // addActor() {
-  //   const actor = (document.getElementById('actors') as HTMLInputElement).value;
-  //   if (actor) {
-  //     this.actors.push(actor);
-  //     this.filmForm.patchValue({ actors: this.actors });
-  //   }
-  // }
+
   addActor() {
     console.log("Add Actor");
     this.actors.push('');
@@ -78,7 +77,8 @@ export class FilmFormComponent {
   OnSubmit ()  {
     console.log("Push Form");
     if (this.filmForm.valid) {
-    const film = this.filmForm.getRawValue();
+    let film = this.filmForm.getRawValue();
+    film.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(film.trailer)
     console.log(film);
     this.SubmitTask.emit(film);
     }
